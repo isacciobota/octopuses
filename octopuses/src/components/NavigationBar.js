@@ -4,7 +4,7 @@ import {Nav} from 'react-bootstrap'
 import {Container} from "reactstrap"
 import {makeStyles} from "@material-ui/core/styles"
 
-//Socials
+//Resources
 import  instagram  from '../resources/instagramLogo.svg'
 import  discord  from '../resources/DiscordLogo.svg'
 import  twitter  from '../resources/TwitterLogo.svg'
@@ -23,23 +23,26 @@ const styles = makeStyles({
     marginRight: "20px",
     width: "17px",
     height: "17px",
-    
     "&:hover":{
      color: "red",
     },
+  },
+  navigationBar:{
+    padding: "0px",
   },
 })
 
 function NavigationBar() {
     const classes = styles()
     return (
-      <Navbar collapseOnSelect expand="lg" bg="white" variant="light" sticky="top">
-        <Container fluid> 
-          <Navbar.Brand href="#" style={{marginLeft: "10px"}}>
+      <Navbar collapseOnSelect expand="lg" bg="white" variant="light" sticky="top"  style={{padding: "0px"}}>
+        <Container fluid > 
+          <Navbar.Brand href="#" style={{marginLeft: "10px", padding: "0px"}}>
            <img src={logo} alt="logo" width="60" height="60"/>
           </Navbar.Brand>
           
           <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{marginRight: "10px"}}/>
+          
           <Navbar.Collapse id="responsive-navbar-nav" placement="end">
             <Nav className="m-auto" >
               <Nav.Link href="#about" className={classes.navItem}>About</Nav.Link>
