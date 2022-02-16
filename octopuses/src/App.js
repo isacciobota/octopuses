@@ -5,8 +5,8 @@ import SectorAbout from './components/SectorAbout'
 import SectorOpenSea from './components/SectorOpenSea'
 import SectorCollection from './components/SectorCollection'
 import SectorTeam from './components/SectorTeam'
-import SectorContact from './components/SectorContact'
-//extra
+import Footer from './components/Footer'
+//resources
 import background from './resources/Background.jpeg'
 
 function App() {
@@ -14,11 +14,11 @@ function App() {
     <div className="App">
         <NavigationBar/>
         <img src={background} width="100%" alt="ocean"></img>
-        <SectorAbout/>
-        <SectorOpenSea/>
-        <SectorCollection/>
-        <SectorTeam/>
-        <SectorContact/>     
+        <a  id="about"><SectorAbout/></a>
+        <a  id="opensea"><SectorOpenSea id="opensea"/></a>
+        <a  id="collection"><SectorCollection id="collection"/></a>
+        <a  id="team"><SectorTeam id="team"/></a>
+        <Footer/>
     </div>
   );
 }

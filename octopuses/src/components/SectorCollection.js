@@ -1,37 +1,44 @@
 import React from 'react'
 import {makeStyles} from "@material-ui/core/styles"
-import  logo  from '../resources/Octopus.svg'
-
+import Button from 'react-bootstrap/Button'
 //Resources
-import  instagram  from '../resources/instagramLogo.svg'
-import  discord  from '../resources/DiscordLogo.svg'
-import  twitter  from '../resources/TwitterLogo.svg'
-import  reddit  from '../resources/RedditLogo.svg'
+import octopus from '../resources/Octopus2.jpeg'
 
 const styles = makeStyles({
   containerColor:{
     width:"100%",
     display: "flex",
     justifyContent: "center",
-    backgroundColor: "black", 
-    color: "white",
+    backgroundColor: "white", 
+    color: "black",
   },
   container:{
     width:"75%", 
-    
+    margin: "100px 0px",
   },
   textContainer:{
     float:"left",
     width:"50%",
     textAlign: "left",
+    ['@media (max-width:768px)']: { 
+      width:"100%",
+      textAlign: "center",     
+     }
   },
-  navSocials:{
-    margin: "0px 20px 20px 0px",
-    width: "17px",
-    height: "17px",
-    "&:hover":{
-     color: "red",
-    },
+  title:{
+    marginBottom: "20px",
+  },
+  imageContainer:{
+    float:"right",
+    width:"50%",
+  },
+  imagine:{
+    width: "50%",
+    float:"right",
+    ['@media (max-width:768px)']: { 
+     width: "100%",
+     marginTop:"30px",     
+    }
   },
 })
 
@@ -41,8 +48,9 @@ function SectorCollection() {
   return (
     <div className={classes.containerColor}>
       <div className={classes.container}>
+          <hr style={{marginBottom:"70px"}}></hr>
           <div className={classes.textContainer}>
-              <h1>Collection</h1>
+              <h1 className={classes.title}>Collection</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies euismod lectus, 
                   venenatis aliquet sapien congue ac. Aliquam vitae fringilla lectus, at congue arcu. 
                   Maecenas venenatis lectus sed est euismod, in efficitur augue ornare. Proin ut tincidunt 
@@ -51,16 +59,12 @@ function SectorCollection() {
                   scelerisque, egestas risus at, fermentum nisi. Sed rhoncus velit id rutrum consectetur. Duis 
                   interdum convallis neque a pretium.
               </p>
-              <div >
-                  <img src={instagram} alt="instagram" className={classes.navSocials}/> 
-                  <img src={discord} alt="discord" className={classes.navSocials}/> 
-                  <img src={twitter} alt="twitter" className={classes.navSocials}/> 
-                  <img src={reddit} alt="reddit" className={classes.navSocials}/> 
-              </div>
+              <Button variant="btn btn-outline-dark btn-round" href="#placeholder" style={{marginRight:"20px"}}>Traits</Button>
+              <Button variant="btn btn-outline-dark btn-round" href="#placeholder">Gallery</Button>
           </div>
 
-          <div style={{float:"right"}}>
-              <img src={logo} alt="logo" width="60" height="60"/>
+          <div className={classes.imageContainer}>
+              <img src={octopus} alt="logo" className={classes.imagine} />
           </div>
       </div>
     </div>

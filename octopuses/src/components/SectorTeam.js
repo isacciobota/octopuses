@@ -1,67 +1,71 @@
 import React from 'react'
 import {makeStyles} from "@material-ui/core/styles"
-import  logo  from '../resources/Octopus.svg'
-
 //Resources
-import  instagram  from '../resources/instagramLogo.svg'
-import  discord  from '../resources/DiscordLogo.svg'
-import  twitter  from '../resources/TwitterLogo.svg'
-import  reddit  from '../resources/RedditLogo.svg'
+import  isac  from '../resources/Octopus1.jpeg'
+import  oana  from '../resources/Octopus2.jpeg'
+import  teemo  from '../resources/Octopus1.jpeg'
 
 const styles = makeStyles({
   containerColor:{
     width:"100%",
     display: "flex",
     justifyContent: "center",
-    backgroundColor: "white", 
-    color: "black",
+    backgroundColor: "black", 
+    color: "white",
   },
   container:{
-    width:"75%", 
-    
+    margin: "50px 0px",
+    width: "50%",
+    ['@media (max-width:768px)']: { 
+      width: "100%",     
+     }
   },
-  textContainer:{
+  items:{
+    width: "33%",
     float:"left",
-    width:"50%",
-    textAlign: "left",
+    ['@media (max-width:768px)']: { 
+     width: "100%",     
+    }
   },
-  navSocials:{
-    margin: "0px 20px 20px 0px",
-    width: "17px",
-    height: "17px",
-    "&:hover":{
-     color: "red",
-    },
+  imagine:{
+    width: "65%",
+    ['@media (max-width:768px)']: { 
+     width: "70%",
+     marginTop:"30px",     
+    }
   },
+  nume:{
+    marginTop: "20px",
+    fontSize: "20px",
+  },
+  title:{
+    color: "white",
+    paddingTop: "70px",
+  }
 })
-
 
 function SectorContentTeam() {
   const classes = styles()  
   return (
-    <div className={classes.containerColor}>
-      <div className={classes.container}>
-          <div className={classes.textContainer}>
-              <h1>Team</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies euismod lectus, 
-                  venenatis aliquet sapien congue ac. Aliquam vitae fringilla lectus, at congue arcu. 
-                  Maecenas venenatis lectus sed est euismod, in efficitur augue ornare. Proin ut tincidunt 
-                  turpis, aliquam vehicula tellus. Quisque tortor magna, laoreet eu sagittis et, euismod a 
-                  ante. Nulla ac odio sit amet justo congue ultrices et vitae neque. Suspendisse varius massa 
-                  scelerisque, egestas risus at, fermentum nisi. Sed rhoncus velit id rutrum consectetur. Duis 
-                  interdum convallis neque a pretium.
-              </p>
-              <div >
-                  <img src={instagram} alt="instagram" className={classes.navSocials}/> 
-                  <img src={discord} alt="discord" className={classes.navSocials}/> 
-                  <img src={twitter} alt="twitter" className={classes.navSocials}/> 
-                  <img src={reddit} alt="reddit" className={classes.navSocials}/> 
-              </div>
-          </div>
+    <div style={{backgroundColor:"black"}}>
+      <h1 className={classes.title}>Who are we?</h1>
+      <div className={classes.containerColor}>
+        <div className={classes.container}>
+                <div className={classes.items}>
+                  <img src={isac} alt="isac" className={classes.imagine}/>
+                  <p className={classes.nume}>Isac Ciobota</p>
+                </div>
 
-          <div style={{float:"right"}}>
-              <img src={logo} alt="logo" width="60" height="60"/>
-          </div>
+                <div className={classes.items}>
+                  <img src={oana} alt="oana" className={classes.imagine}/>
+                  <p className={classes.nume}>Oana Negrut</p>
+                </div>
+
+                <div className={classes.items}>
+                  <img src={teemo} alt="teemo" className={classes.imagine}/>
+                  <p className={classes.nume}>Teemo</p>
+                </div>
+        </div>
       </div>
     </div>
   )
