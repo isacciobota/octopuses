@@ -1,21 +1,22 @@
 import React from 'react'
 import {makeStyles} from "@material-ui/core/styles"
 //Resources
-import  isac  from '../resources/Octopus1.jpeg'
-import  oana  from '../resources/Octopus2.jpeg'
-import  teemo  from '../resources/Octopus1.jpeg'
+import  isac  from '../resources/Isac.png'
+import  oana  from '../resources/Oana.png'
+import  teemo  from '../resources/Timo.png'
+import colaj from '../resources/Colaj3.png'
 
 const styles = makeStyles({
   containerColor:{
     width:"100%",
     display: "flex",
     justifyContent: "center",
-    backgroundColor: "black", 
-    color: "white",
+    backgroundColor: "white", 
+    color: "black",
   },
   container:{
-    margin: "50px 0px",
-    width: "50%",
+    margin: "70px 0px",
+    width: "75%",
     ['@media (max-width:768px)']: { 
       width: "100%",     
      }
@@ -36,19 +37,21 @@ const styles = makeStyles({
   },
   nume:{
     marginTop: "20px",
-    fontSize: "20px",
+    fontSize: "16px",
   },
   title:{
-    color: "white",
+    color: "black",
     paddingTop: "70px",
+    fontWeight: "bold",
   }
 })
 
 function SectorContentTeam() {
   const classes = styles()  
   return (
-    <div style={{backgroundColor:"black"}}>
-      <h1 className={classes.title}>Who are we?</h1>
+    <div style={{backgroundColor:"white"}}>
+      
+      <h2 className={classes.title}>Who are we?</h2>
       <div className={classes.containerColor}>
         <div className={classes.container}>
                 <div className={classes.items}>
@@ -63,7 +66,7 @@ function SectorContentTeam() {
 
                 <div className={classes.items}>
                   <img src={teemo} alt="teemo" className={classes.imagine}/>
-                  <p className={classes.nume}>Teemo</p>
+                  <p className={classes.nume}>Timotei Perju</p>
                 </div>
         </div>
       </div>

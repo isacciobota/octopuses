@@ -29,6 +29,13 @@ const styles = makeStyles({
   navigationBar:{
     padding: "0px",
   },
+  logo:{
+    marginLeft: "100px", 
+    padding: "0px", 
+    ['@media (max-width:768px)']: { 
+      marginLeft:"0"
+    }
+  }
 })
 
 function NavigationBar() {
@@ -36,7 +43,7 @@ function NavigationBar() {
     return (
       <Navbar collapseOnSelect expand="sm" bg="white" variant="light" sticky="top"  style={{padding: "0px"}}>
         <Container fluid > 
-          <Navbar.Brand href="#" style={{marginLeft: "10px", padding: "0px"}}>
+          <Navbar.Brand href="#" className={classes.logo}>
            <img src={logo} alt="logo" width="60" height="60"/>
           </Navbar.Brand>
           
@@ -61,7 +68,7 @@ function NavigationBar() {
               <img src={twitter} alt="twitter" className={classes.navSocials}/> 
               </Nav.Link>
               <Nav.Link href="#reddit">
-                <img src={reddit} alt="reddit" className={classes.navSocials} style={{marginRight: "10px"}}/> 
+                <img src={reddit} alt="reddit" className={classes.navSocials} style={{marginRight: "100px"}}/> 
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

@@ -1,8 +1,11 @@
 import React from 'react'
 import {makeStyles} from "@material-ui/core/styles"
 import Button from 'react-bootstrap/Button'
+import { NavLink } from 'react-router-dom'
 //Resources
-import octopus from '../resources/Octopus2.jpeg'
+import octopus from '../resources/308.png'
+import colaj from '../resources/Colaj.png'
+
 
 const styles = makeStyles({
   containerColor:{
@@ -18,7 +21,7 @@ const styles = makeStyles({
   },
   textContainer:{
     float:"left",
-    width:"50%",
+    width:"45%",
     textAlign: "left",
     ['@media (max-width:768px)']: { 
       width:"100%",
@@ -27,46 +30,70 @@ const styles = makeStyles({
   },
   title:{
     marginBottom: "20px",
+    fontWeight: "bold",
+  },
+  semititle:{
+    marginTop: "20px",
+  },
+  text:{
+    color:"grey",
+    fontSize:"13px",
+    lineHeight: "1.8",
+    letterSpacing: "1px",
   },
   imageContainer:{
     float:"right",
-    width:"50%",
+    width:"50%",  
+    ['@media (max-width:768px)']: { 
+      width: "100%",     
+     }
   },
   imagine:{
-    width: "50%",
+    width: "60%",
     float:"right",
     ['@media (max-width:768px)']: { 
      width: "100%",
      marginTop:"30px",     
     }
   },
+  button:{
+    marginTop:"20px",
+    ['@media (max-width:768px)']: { 
+      marginTop:"20px", 
+      marginBottom:"20px",    
+     }
+  },
+  colaj:{
+    width:"100%",
+    marginBottom: "50px"
+  }
 })
 
 
 function SectorCollection() {
   const classes = styles()  
   return (
+    <div>
     <div className={classes.containerColor}>
       <div className={classes.container}>
-          <hr style={{marginBottom:"70px"}}></hr>
           <div className={classes.textContainer}>
-              <h1 className={classes.title}>Collection</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies euismod lectus, 
-                  venenatis aliquet sapien congue ac. Aliquam vitae fringilla lectus, at congue arcu. 
-                  Maecenas venenatis lectus sed est euismod, in efficitur augue ornare. Proin ut tincidunt 
-                  turpis, aliquam vehicula tellus. Quisque tortor magna, laoreet eu sagittis et, euismod a 
-                  ante. Nulla ac odio sit amet justo congue ultrices et vitae neque. Suspendisse varius massa 
-                  scelerisque, egestas risus at, fermentum nisi. Sed rhoncus velit id rutrum consectetur. Duis 
-                  interdum convallis neque a pretium.
-              </p>
-              <Button variant="btn btn-outline-dark btn-round" href="#placeholder" style={{marginRight:"20px"}}>Traits</Button>
-              <Button variant="btn btn-outline-dark btn-round" href="#placeholder">Gallery</Button>
+              <h2 className={classes.title}>Collection</h2>
+              <p className={classes.text}>As we already said, there will be 10k Octopuses.
+                <br/><br/>
+                Each Octopus is generated randomly using all the traits, so each Octopus is unique in their own ways. 
+                <br/><br/>                
+                However, some Octopuses are more unique than others. If you’re lucky, you might get a legendary trait!
+                </p>
+              <Button to="/traits" variant="btn btn-outline-dark btn-round" style={{marginRight:"20px"}} className={classes.button}>Traits<span className="sr-only"></span></Button>
+              <Button variant="btn btn-outline-dark btn-round" href="#placeholder" className={classes.button}>Gallery</Button>
           </div>
 
           <div className={classes.imageContainer}>
               <img src={octopus} alt="logo" className={classes.imagine} />
           </div>
       </div>
+    </div>
+    <div className={classes.colaj}><img src={colaj} width="100%" alt="colaj"></img></div>
     </div>
   )
 }

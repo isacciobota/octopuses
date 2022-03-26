@@ -7,7 +7,7 @@ import SectorCollection from './components/SectorCollection'
 import SectorTeam from './components/SectorTeam'
 import Footer from './components/Footer'
 //resources
-import background from './resources/Background.jpeg'
+import background from './resources/Artboard.png'
 
 function App() {
   return (

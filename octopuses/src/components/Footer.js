@@ -1,22 +1,23 @@
 import React from 'react'
 import {makeStyles} from "@material-ui/core/styles"
 //Resources
-import  instagram  from '../resources/instagramLogo.svg'
-import  discord  from '../resources/DiscordLogo.svg'
-import  twitter  from '../resources/TwitterLogo.svg'
-import  reddit  from '../resources/RedditLogo.svg'
+import  instagram  from '../resources/instagramLogo2.svg'
+import  discord  from '../resources/DiscordLogo2.svg'
+import  twitter  from '../resources/TwitterLogo2.svg'
+import  reddit  from '../resources/RedditLogo2.svg'
 
 const styles = makeStyles({
     containerColor:{
         width:"100%",
         display: "flex",
         justifyContent: "center",
-        backgroundColor: "white", 
-        color: "black",
-      },
+        backgroundColor: "#044959", 
+        color: "white",
+    },
     container:{
         width:"75%", 
-        margin: "30px 0px",
+        marginTop: "30px",
+        marginBottom: "0px",
     },
     textContainer:{
         float:"left",
@@ -31,7 +32,8 @@ const styles = makeStyles({
         fontWeight: "bold"
     },
     descriere:{
-        fontSize: "13px",
+        fontSize: "11px",
+        marginBottom: "10px",
     },
     socials:{
         marginLeft: "20px",
@@ -48,32 +50,37 @@ const styles = makeStyles({
         float: "right",
         ['@media (max-width:768px)']: { 
             width:"100%",   
+            marginBottom:"20px",
         }
+    },
+    footerWrapper:{
+        backgroundColor: "#044959", 
+        color: "white",
     }
 })
 
 function Footer() {
     const classes = styles()  
     return (
-    <div>  
+    <div className={classes.footerWrapper}>  
         <div className={classes.containerColor}>
-        <div className={classes.container}>
-            <div className={classes.textContainer}>
-                <h6 className={classes.title}>OCTOPUSES</h6>
-                <p className={classes.descriere}>Ceva descriere scurta si interesanta</p>
-            </div>
+            <div className={classes.container}>
+                <div className={classes.textContainer}>
+                    <h6 className={classes.title}>OCTOPUSES</h6>
+                    <p className={classes.descriere}>#1 NFT Collection // Powered by Ethereum // Available on OpenSea</p>
+                </div>
 
-            <div className={classes.socialsContainer}>
-                    <div>
-                    <img src={instagram} alt="instagram" className={classes.socials} style={{marginLeft:"0px"}}/> 
-                    <img src={discord} alt="discord" className={classes.socials}/> 
-                    <img src={twitter} alt="twitter" className={classes.socials}/> 
-                    <img src={reddit} alt="reddit" className={classes.socials}/> 
+                <div className={classes.socialsContainer}>
+                        <div>
+                        <a href="https://www.instagram.com/tineretbetel/?hl=en"><img src={instagram} alt="instagram" className={classes.socials} style={{marginLeft:"0px"}}/></a> 
+                        <a href="https://www.instagram.com/tineretbetel/?hl=en"><img src={discord} alt="discord" className={classes.socials}/></a>
+                        <a href="https://www.instagram.com/tineretbetel/?hl=en"><img src={twitter} alt="twitter" className={classes.socials}/></a>
+                        <a href="https://www.instagram.com/tineretbetel/?hl=en"><img src={reddit} alt="reddit" className={classes.socials}/></a> 
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
-    <p className={classes.descriere} style={{marginBottom:"30px"}}>To the moon 🚀</p>
+        <p style={{fontSize: "13px", paddingBottom: "20px", margin:"0px"}}>To the moon 🚀</p>
     </div>  
   )
 }
