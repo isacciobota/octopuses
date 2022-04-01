@@ -36,7 +36,15 @@ const styles = makeStyles({
     ['@media (max-width:768px)']: { 
       marginLeft:"0"
     }
-  }
+  },
+  link:{
+    color: "white",
+    textDecoration: "none",
+    "&:hover":{
+      color: "black",
+      textDecoration: "none",
+    },
+  },
 })
 
 function NavigationBar() {
@@ -55,28 +63,28 @@ function NavigationBar() {
           
           <Navbar.Collapse id="responsive-navbar-nav" placement="end">
             <Nav className="m-auto" >
-              <Nav.Link href="#skin" className={classes.navItem}>Skin</Nav.Link>
-              <Nav.Link href="#accessories" className={classes.navItem}>Accessories</Nav.Link>
-              <Nav.Link href="#clothes" className={classes.navItem}>Clothes</Nav.Link>
-              <Nav.Link href="#eyes" className={classes.navItem}>Eyes</Nav.Link>
-              <Nav.Link href="#mouth" className={classes.navItem}>Mouth</Nav.Link>
-              <Nav.Link href="#tentacles" className={classes.navItem}>Tentacles</Nav.Link>
-              <Nav.Link href="#brows" className={classes.navItem}>Brows</Nav.Link>
-              <Nav.Link href="#background" className={classes.navItem}>Background</Nav.Link>
+              <Link to="/skin" className={classes.link}><Nav.Link href="#skin" className={classes.navItem}>Skin</Nav.Link></Link>
+              <Link to="/accessories" className={classes.link}><Nav.Link href="#accessories" className={classes.navItem}>Accessories</Nav.Link></Link>
+              <Link to="/clothes" className={classes.link}><Nav.Link href="#clothes" className={classes.navItem}>Clothes</Nav.Link></Link>
+              <Link to="/eyes" className={classes.link}><Nav.Link href="#eyes" className={classes.navItem}>Eyes</Nav.Link></Link>
+              <Link to="/mouth" className={classes.link}><Nav.Link href="#mouth" className={classes.navItem}>Mouth</Nav.Link></Link>
+              <Link to="/tentacles" className={classes.link}><Nav.Link href="#tentacles" className={classes.navItem}>Tentacles</Nav.Link></Link>
+              <Link to="/brows" className={classes.link}><Nav.Link href="#brows" className={classes.navItem}>Brows</Nav.Link></Link>
+              <Link to="/background" className={classes.link}><Nav.Link href="#background" className={classes.navItem}>Background</Nav.Link></Link>
             </Nav>
 
             <Nav className="d-none d-sm-flex">
-              <Nav.Link href="https://www.instagram.com/tineretbetel/?hl=en">
-                <img src={instagram} alt="instagram" className={classes.navSocials}/> 
+              <Nav.Link href="https://www.instagram.com/tineretbetel/?hl=en" target="_blank">
+                <img src={instagram} alt="instagram" className={classes.navSocials} target="_blank"/> 
               </Nav.Link>
               <Nav.Link href="#discord">
-                <img src={discord} alt="discord" className={classes.navSocials}/> 
+                <img src={discord} alt="discord" className={classes.navSocials} target="_blank"/> 
               </Nav.Link>
               <Nav.Link href="#twitter">
-              <img src={twitter} alt="twitter" className={classes.navSocials}/> 
+              <img src={twitter} alt="twitter" className={classes.navSocials} target="_blank"/> 
               </Nav.Link>
               <Nav.Link href="#reddit">
-                <img src={reddit} alt="reddit" className={classes.navSocials} style={{marginRight: "100px"}}/> 
+                <img src={reddit} alt="reddit" className={classes.navSocials} style={{marginRight: "100px"}} target="_blank"/> 
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

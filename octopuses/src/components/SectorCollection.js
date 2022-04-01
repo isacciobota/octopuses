@@ -66,7 +66,15 @@ const styles = makeStyles({
   colaj:{
     width:"100%",
     marginBottom: "50px"
-  }
+  },
+  link:{
+    color: "white",
+    textDecoration: "none",
+    "&:hover":{
+      color: "black",
+      textDecoration: "none",
+    },
+  },
 })
 
 
@@ -84,8 +92,8 @@ function SectorCollection() {
                 <br/><br/>                
                 However, some Octopuses are more unique than others. If you’re lucky, you might get a legendary trait!
                 </p>
-              <Link to="/traits"><Button variant="btn btn-outline-dark btn-round" style={{marginRight:"20px"}} className={classes.button}>Traits<span className="sr-only"></span></Button></Link>
-              <Link to="/gallery"><Button variant="btn btn-outline-dark btn-round" className={classes.button}>Gallery</Button></Link>
+              <Link to="/skin"><Button variant="btn btn-outline-dark btn-round" style={{marginRight:"20px"}} className={classes.button}>Traits<span className="sr-only"></span></Button></Link>
+              <a href="https://opensea.io/"className={classes.link} target="_blank"><Button variant="btn btn-outline-dark btn-round" className={classes.button}>Gallery</Button></a>
           </div>
 
           <div className={classes.imageContainer}>

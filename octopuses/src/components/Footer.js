@@ -73,10 +73,10 @@ function Footer() {
 
                 <div className={classes.socialsContainer}>
                         <div>
-                        <a href="https://www.instagram.com/tineretbetel/?hl=en"><img src={instagram} alt="instagram" className={classes.socials} style={{marginLeft:"0px"}}/></a> 
-                        <a href="https://www.instagram.com/tineretbetel/?hl=en"><img src={discord} alt="discord" className={classes.socials}/></a>
-                        <a href="https://www.instagram.com/tineretbetel/?hl=en"><img src={twitter} alt="twitter" className={classes.socials}/></a>
-                        <a href="https://www.instagram.com/tineretbetel/?hl=en"><img src={reddit} alt="reddit" className={classes.socials}/></a> 
+                        <a href="https://www.instagram.com/tineretbetel/?hl=en" target="_blank"><img src={instagram} alt="instagram" className={classes.socials} style={{marginLeft:"0px"}}/></a> 
+                        <a href="https://www.instagram.com/tineretbetel/?hl=en" target="_blank"><img src={discord} alt="discord" className={classes.socials}/></a>
+                        <a href="https://www.instagram.com/tineretbetel/?hl=en" target="_blank"><img src={twitter} alt="twitter" className={classes.socials}/></a>
+                        <a href="https://www.instagram.com/tineretbetel/?hl=en" target="_blank"><img src={reddit} alt="reddit" className={classes.socials}/></a> 
                     </div>
                 </div>
             </div>

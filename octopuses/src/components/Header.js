@@ -72,7 +72,7 @@ function Header() {
         <h2 className={classes.title}>LAUNCHING SOON</h2>
         <div className={classes.dateCenter}>
           <div className={classes.dateWrapper}>
-          <a href="https://opensea.io/"className={classes.link}><h2 className={classes.date}>9 June 22:00 UTC</h2></a>
+          <a href="https://opensea.io/"className={classes.link} target="_blank"><h2 className={classes.date}>9 June 22:00 UTC</h2></a>
           </div>
         </div>
         <p className={classes.text}>powered by Ethereum | lauching on OpenSea</p>
