@@ -1,26 +1,27 @@
 import './App.css'
 //components
 import NavigationBar from './components/NavigationBar.js'
-import SectorAbout from './components/SectorAbout'
-import SectorOpenSea from './components/SectorOpenSea'
-import SectorCollection from './components/SectorCollection'
-import SectorTeam from './components/SectorTeam'
-import Footer from './components/Footer'
-//resources
-import background from './resources/Artboard.png'
+import Home from './components/Home.js'
+import Traits from './components/Traits.js'
+import Gallery from './components/Gallery.js'
+//routes
+import ReactDOM from "react-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-        <NavigationBar/>
-        <img src={background} width="100%" alt="ocean"></img>
-        <a  id="about"><SectorAbout/></a>
-        <a  id="opensea"><SectorOpenSea id="opensea"/></a>
-        <a  id="collection"><SectorCollection id="collection"/></a>
-        <a  id="team"><SectorTeam id="team"/></a>
-        <Footer/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<NavigationBar />}>
+            <Route index element={<Home />} />
+            <Route path="/traits" element={<Traits />} />
+            <Route path="/gallery" element={<Gallery />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
 
-export default App;
+ReactDOM.render(<App />, document.getElementById("root"));

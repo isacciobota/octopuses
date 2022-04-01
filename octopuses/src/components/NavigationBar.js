@@ -3,6 +3,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import {Nav} from 'react-bootstrap'
 import {Container} from "reactstrap"
 import {makeStyles} from "@material-ui/core/styles"
+import { Outlet, Link } from "react-router-dom";
 //Resources
 import  instagram  from '../resources/instagramLogo.svg'
 import  discord  from '../resources/DiscordLogo.svg'
@@ -41,12 +42,15 @@ const styles = makeStyles({
 function NavigationBar() {
     const classes = styles()
     return (
+      <>
       <Navbar collapseOnSelect expand="sm" bg="white" variant="light" sticky="top"  style={{padding: "0px"}}>
-        <Container fluid > 
-          <Navbar.Brand href="#" className={classes.logo}>
-           <img src={logo} alt="logo" width="60" height="60"/>
-          </Navbar.Brand>
-          
+        <Container fluid >
+          <Link to="/"> 
+            <Navbar.Brand href="#" className={classes.logo}>
+              <img src={logo} alt="logo" width="60" height="60"/>
+            </Navbar.Brand>
+          </Link>
+
           <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{marginRight: "10px"}}/>
           
           <Navbar.Collapse id="responsive-navbar-nav" placement="end">
@@ -75,6 +79,9 @@ function NavigationBar() {
 
         </Container>
       </Navbar>
+
+      <Outlet />
+      </>
     )
 }
 

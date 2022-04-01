@@ -54,6 +54,7 @@ const styles = makeStyles({
         }
     },
     footerWrapper:{
+        width:"100%",
         backgroundColor: "#044959", 
         color: "white",
     }

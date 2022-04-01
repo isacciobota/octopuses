@@ -1,7 +1,7 @@
 import React from 'react'
 import {makeStyles} from "@material-ui/core/styles"
 import Button from 'react-bootstrap/Button'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 //Resources
 import octopus from '../resources/308.png'
 import colaj from '../resources/Colaj.png'
@@ -84,8 +84,8 @@ function SectorCollection() {
                 <br/><br/>                
                 However, some Octopuses are more unique than others. If you’re lucky, you might get a legendary trait!
                 </p>
-              <Button to="/traits" variant="btn btn-outline-dark btn-round" style={{marginRight:"20px"}} className={classes.button}>Traits<span className="sr-only"></span></Button>
-              <Button variant="btn btn-outline-dark btn-round" href="#placeholder" className={classes.button}>Gallery</Button>
+              <Link to="/traits"><Button variant="btn btn-outline-dark btn-round" style={{marginRight:"20px"}} className={classes.button}>Traits<span className="sr-only"></span></Button></Link>
+              <Link to="/gallery"><Button variant="btn btn-outline-dark btn-round" className={classes.button}>Gallery</Button></Link>
           </div>
 
           <div className={classes.imageContainer}>

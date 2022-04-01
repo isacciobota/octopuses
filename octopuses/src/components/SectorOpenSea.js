@@ -75,7 +75,7 @@ function SectorOpenSea() {
               </p>
               <h5 className={classes.semititle}>OpenSea</h5>
               <p className={classes.text}> OpenSea is the largest marketplace for non-fungible tokens (NFTs).</p> 
-              <Button variant="btn btn-outline-light btn-round" href="#placeholder" className={classes.button}>OpenSea</Button>
+              <Button variant="btn btn-outline-light btn-round" href="https://opensea.io/" className={classes.button}>OpenSea</Button>
           </div>
       </div>
     </div>
