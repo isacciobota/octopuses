@@ -12,7 +12,6 @@ const styles = makeStyles({
     width:"100%",
     display: "flex",
     justifyContent: "center",
-    backgroundColor: "white", 
     color: "black",
   },
   container:{

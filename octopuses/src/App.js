@@ -1,6 +1,5 @@
 import './App.css'
 //components
-import NavigationBar from './components/NavigationBar.js'
 import Home from './components/Home.js'
 import Traits from './components/Traits.js'
 import Gallery from './components/Gallery.js'
@@ -13,11 +12,9 @@ export default function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<NavigationBar />}>
             <Route index element={<Home />} />
             <Route path="/traits" element={<Traits />} />
             <Route path="/gallery" element={<Gallery />} />
-          </Route>
         </Routes>
       </BrowserRouter>
     </div>
