@@ -80,7 +80,7 @@ function SectorAbout() {
                 of an artwork.</p>
               <h5 className={classes.semititle}>Blockchain</h5>
               <p className={classes.text}>Octopuses are powered by Polygon (also known as Matic Network). Polygon is an open-source project 
-                built by a worldwide decentralized team of contributors. The framework combines Ethereum and sovereign blockchains into a multi-chain system..</p> 
+                built by a worldwide decentralized team of contributors. It combines Ethereum and sovereign blockchains into a multi-chain system.</p> 
               <div>
                   <a href="https://instagram.com/octopusesnft?utm_medium=copy_link" target="_blank"><img src={instagram} alt="instagram" className={classes.socials}/></a> 
                   <a href="https://discord.gg/UebBHWHNNZ" target="_blank"><img src={discord} alt="discord" className={classes.socials}/></a> 

@@ -75,7 +75,7 @@ function Header() {
           <a href="https://opensea.io/"className={classes.link} target="_blank"><h2 className={classes.date}>9 June 22:00 UTC</h2></a>
           </div>
         </div>
-        <p className={classes.text}>powered by Polygon | lauching on OpenSea</p>
+        <p className={classes.text}>powered by Polygon | launching on OpenSea</p>
       </div>
 
     </div>
