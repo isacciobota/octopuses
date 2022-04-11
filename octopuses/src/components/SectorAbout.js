@@ -79,13 +79,13 @@ function SectorAbout() {
                 An autonomous system in this context is generally one that is non-human and can independently determine features 
                 of an artwork.</p>
               <h5 className={classes.semititle}>Blockchain</h5>
-              <p className={classes.text}>Octopuses are powered by Ethereum. Ethereum is a decentralized, open-source blockchain with smart contract 
-                functionality. Among cryptocurrencies, Ether is second only to Bitcoin in market capitalization.</p> 
+              <p className={classes.text}>Octopuses are powered by Polygon (also known as Matic Network). Polygon is an open-source project 
+                built by a worldwide decentralized team of contributors. The framework combines Ethereum and sovereign blockchains into a multi-chain system..</p> 
               <div>
-                  <a href="https://www.instagram.com/tineretbetel/?hl=en"><img src={instagram} alt="instagram" className={classes.socials}/></a> 
-                  <a href="https://www.instagram.com/tineretbetel/?hl=en"><img src={discord} alt="discord" className={classes.socials}/></a> 
-                  <a href="https://www.instagram.com/tineretbetel/?hl=en"><img src={twitter} alt="twitter" className={classes.socials}/></a> 
-                  <a href="https://www.instagram.com/tineretbetel/?hl=en"><img src={reddit} alt="reddit" className={classes.socials}/></a> 
+                  <a href="https://instagram.com/octopusesnft?utm_medium=copy_link" target="_blank"><img src={instagram} alt="instagram" className={classes.socials}/></a> 
+                  <a href="https://discord.gg/UebBHWHNNZ" target="_blank"><img src={discord} alt="discord" className={classes.socials}/></a> 
+                  <a href="https://twitter.com/NFTOctopuses" target="_blank"><img src={twitter} alt="twitter" className={classes.socials}/></a> 
+                  <a href="https://www.reddit.com/r/octopusesnft/" target="_blank"><img src={reddit} alt="reddit" className={classes.socials}/></a> 
               </div>
           </div>
 

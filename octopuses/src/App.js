@@ -1,7 +1,6 @@
 import './App.css'
 //components
 import Home from './components/Home.js'
-import Traits from './components/Traits.js'
 import Skin from './components/Skin.js'
 import Accessories from './components/Accessories.js'
 import Clothes from './components/Clothes.js'
@@ -20,7 +19,6 @@ export default function App() {
       <BrowserRouter>
         <Routes>
             <Route index element={<Home />} />
-            <Route path="/traits" element={<Traits />} />
             <Route path="/skin" element={<Skin />} />
             <Route path="/accessories" element={<Accessories />} />
             <Route path="/clothes" element={<Clothes />} />

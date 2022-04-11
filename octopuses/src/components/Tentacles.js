@@ -16,6 +16,9 @@ const styles = makeStyles({
     margin: "auto",
     width:"75%",
     textAlign: "left",
+    ['@media (max-width:768px)']: { 
+      textAlign: "center", 
+    }
   },
   imageContainer:{
     display:"inline-block",

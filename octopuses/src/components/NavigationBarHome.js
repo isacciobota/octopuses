@@ -62,16 +62,16 @@ function NavigationBar() {
             </Nav>
 
             <Nav className="d-none d-sm-flex">
-              <Nav.Link href="https://www.instagram.com/tineretbetel/?hl=en" target="_blank">
+              <Nav.Link href="https://instagram.com/octopusesnft?utm_medium=copy_link" target="_blank">
                 <img src={instagram} alt="instagram" className={classes.navSocials}/> 
               </Nav.Link>
-              <Nav.Link href="#discord" target="_blank">
+              <Nav.Link href="https://discord.gg/UebBHWHNNZ" target="_blank">
                 <img src={discord} alt="discord" className={classes.navSocials}/> 
               </Nav.Link>
-              <Nav.Link href="#twitter" target="_blank">
+              <Nav.Link href="https://twitter.com/NFTOctopuses" target="_blank">
               <img src={twitter} alt="twitter" className={classes.navSocials}/> 
               </Nav.Link>
-              <Nav.Link href="#reddit" target="_blank">
+              <Nav.Link href="https://www.reddit.com/r/octopusesnft/" target="_blank">
                 <img src={reddit} alt="reddit" className={classes.navSocials} style={{marginRight: "100px"}}/> 
               </Nav.Link>
             </Nav>

@@ -10,6 +10,11 @@ const styles = makeStyles({
     marginBottom:"20px",
     width: "18%",
     float:"left",
+    ['@media (max-width:768px)']: { 
+      marginRight:"10px",
+      marginLeft:"10px",
+      width: "26%",    
+     }
   },
   image:{
     borderRadius: "15px",  
@@ -27,7 +32,7 @@ const styles = makeStyles({
 function TraitsImage(props) {
   const classes = styles()
   return (
-    <div className={classes.container}>
+    <div>
         <div className={classes.items}>
             <img src={props.image} alt="logo" className={classes.image} />
             <p className={classes.nume}>{props.name}</p>
