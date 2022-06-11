@@ -22,15 +22,15 @@ export default function App() {
     <div className="App">
       <Router>
           <Routes>
-            <Route index element={<Home />} />
-            <Route path="/skin" element={<Skin />} />
-            <Route path="/accessories" element={<Accessories />} />
-            <Route path="/clothes" element={<Clothes />} />
-            <Route path="/eyes" element={<Eyes />} />
-            <Route path="/mouth" element={<Mouth />} />
-            <Route path="/tentacles" element={<Tentacles />} />
-            <Route path="/brows" element={<Brows />} />
-            <Route path="/background" element={<Background />} />
+            <Route path="/" element={<Home />}> </Route>
+            <Route exact path="/skin" element={<Skin />} />
+            <Route exact path="/accessories" element={<Accessories />} />
+            <Route exact path="/clothes" element={<Clothes />} />
+            <Route exact path="/eyes" element={<Eyes />} />
+            <Route exact path="/mouth" element={<Mouth />} />
+            <Route exact path="/tentacles" element={<Tentacles />} />
+            <Route exact path="/brows" element={<Brows />} />
+            <Route exact path="/background" element={<Background />} />
           </Routes>
       </Router>
     </div>
