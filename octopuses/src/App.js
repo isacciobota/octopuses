@@ -11,13 +11,18 @@ import Brows from './components/Brows.js'
 import Background from './components/Background.js'
 //routes
 import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
 export default function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
+      <Router>
+          <Routes>
             <Route index element={<Home />} />
             <Route path="/skin" element={<Skin />} />
             <Route path="/accessories" element={<Accessories />} />
@@ -27,8 +32,8 @@ export default function App() {
             <Route path="/tentacles" element={<Tentacles />} />
             <Route path="/brows" element={<Brows />} />
             <Route path="/background" element={<Background />} />
-        </Routes>
-      </BrowserRouter>
+          </Routes>
+      </Router>
     </div>
   );
 }
