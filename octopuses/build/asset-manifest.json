@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0592ba1a.css",
-    "main.js": "/static/js/main.f54b57bc.js",
+    "main.css": "/static/css/main.d964997d.css",
+    "main.js": "/static/js/main.cc290279.js",
     "static/js/787.e81f9071.chunk.js": "/static/js/787.e81f9071.chunk.js",
     "static/media/Isac.png": "/static/media/Isac.ed2a34c8c133152ae6eb.png",
     "static/media/Timo.png": "/static/media/Timo.9b23553b71618911e8ac.png",
@@ -217,12 +217,12 @@
     "static/media/TwitterLogo2.svg": "/static/media/TwitterLogo2.7d457bf98b86fb4d7247442f208a5a07.svg",
     "static/media/TwitterLogo.svg": "/static/media/TwitterLogo.1a832bb1499d0209d4abab38a40a7e7c.svg",
     "index.html": "/index.html",
-    "main.0592ba1a.css.map": "/static/css/main.0592ba1a.css.map",
-    "main.f54b57bc.js.map": "/static/js/main.f54b57bc.js.map",
+    "main.d964997d.css.map": "/static/css/main.d964997d.css.map",
+    "main.cc290279.js.map": "/static/js/main.cc290279.js.map",
     "787.e81f9071.chunk.js.map": "/static/js/787.e81f9071.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0592ba1a.css",
-    "static/js/main.f54b57bc.js"
+    "static/css/main.d964997d.css",
+    "static/js/main.cc290279.js"
   ]
 }
